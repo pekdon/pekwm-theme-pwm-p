@@ -1,0 +1,221 @@
+# template for pwm-p variants
+
+$TEX_FO = "SolidRaised $COLOR_FO $COLOR_FO_HI $COLOR_FO_LO 1 0"
+$TEX_FO_SEL = "SolidRaised $COLOR_FO_SEL $COLOR_FO_SEL_HI $COLOR_FO_SEL_LO 1 0"
+$TEX_UN = "SolidRaised $COLOR_UN $COLOR_UN_HI $COLOR_UN_LO 1 0"
+$TEX_UN_SEL = "SolidRaised $COLOR_UN_SEL $COLOR_UN_SEL_HI $COLOR_UN_SEL_LO"
+
+Require {
+  Templates = "True"
+}
+
+Background {
+  Texture = "$BG_TEX"
+}
+
+ColorMaps {
+  ColorMap = "Focused" {
+    Map = "#aaaaaa" { To = "$COLOR_FO" }
+    Map = "#ffffff" { To = "$COLOR_FO_HI" }
+    Map = "#000000" { To = "$COLOR_FO_LO" }
+  }
+  ColorMap = "Unfocused" {
+    Map = "#aaaaaa" { To = "$COLOR_UN" }
+    Map = "#ffffff" { To = "$COLOR_UN_HI" }
+    Map = "#000000" { To = "$COLOR_UN_LO" }    
+  }
+}
+
+Define = "Border" {
+  Focused {
+    TopLeft = "ImageMapped Focused top-left.png"
+    Top = "ImageMapped Focused top.png"
+    TopRight = "ImageMapped Focused top-right.png"
+    Left = "ImageMapped Focused left.png"
+    Right = "ImageMapped Focused right.png"
+    BottomLeft = "ImageMapped Focused bottom-left.png"
+    Bottom = "ImageMapped Focused bottom.png"
+    BottomRight = "ImageMapped Focused bottom-right.png"
+  }
+  Unfocused {
+    TopLeft = "ImageMapped Unfocused top-left.png"
+    Top = "ImageMapped Unfocused top.png"
+    TopRight = "ImageMapped Unfocused top-right.png"
+    Left = "ImageMapped Unfocused left.png"
+    Right = "ImageMapped Unfocused right.png"
+    BottomLeft = "ImageMapped Unfocused bottom-left.png"
+    Bottom = "ImageMapped Unfocused bottom.png"
+    BottomRight = "ImageMapped Unfocused bottom-right.png"
+  }
+}
+
+Define = "EmptyBorder" {
+  Focused {
+    TopLeft = "Empty"
+    Top = "Empty"
+    TopRight = "Empty"
+    Left = "Empty"
+    Right = "Empty"
+    BottomLeft = "Empty"
+    Bottom = "Empty"
+    BottomRight = "Empty"
+  }
+  Unfocused {
+    TopLeft = "Empty"
+    Top = "Empty"
+    TopRight = "Empty"
+    Left = "Empty"
+    Right = "Empty"
+    BottomLeft = "Empty"
+    Bottom = "Empty"
+    BottomRight = "Empty"
+  }
+}
+
+Define = "Decor" {
+  Height = "22"
+  Pad = "2 2 5 5"
+  
+  WidthMin = "150"
+  WidthMax = "95"
+  WidthSymetric = "true"
+  
+  Focused = "$TEX_FO 1x1"
+  Unfocused = "$TEX_UN 1x1"
+  
+  Tab {
+    Focused = "$TEX_FO 1x1"
+    FocusedSelected = "$TEX_FO_SEL 1x1"
+    Unfocused = "$TEX_UN 1x1"
+    UnfocusedSelected = "$TEX_UN_SEL 1x1"
+  }
+  Separator {
+    Focused = "Empty"
+    Unfocused = "Empty"
+  }
+  Font {
+    Focused = "$FONT#Center"
+  }
+  FontColor {
+    Focused = "$TEXT_FO"
+    FocusedSelected = "$TEXT_FO_SEL"
+    Unfocused = "$TEXT_UN"
+    UnfocusedSelected = "$TEXT_UN_SEL"
+  }
+}
+
+Define = "EmptyDecor" {
+  Height = "0"
+  Pad = "0 0 0 0"
+  Focused = "Empty"
+  Unfocused = "Empty"
+  Tab {
+    Focused = "Empty"
+    FocusedSelected = "Empty"
+    Unfocused = "Empty"
+    UnfocusedSelected = "Empty"
+  }
+  Separator {
+    Focused = "Empty"
+    Unfocused = "Empty"
+  }
+  Font {
+    Focused = "Empty"
+  }
+  FontColor {
+    Focused = "Empty"
+    FocusedSelected = "Empty"
+    Unfocused = "Empty"
+    UnfocusedSelected = "Empty"
+  }
+}
+
+Decor = "Default" {
+  @Decor
+  Border {
+    @Border
+  }
+}
+
+Decor = "CmdDialog" {
+  @EmptyDecor
+  Border {
+    @Border
+  }
+}
+
+Decor = "Menu" {
+  @Decor
+  Border {
+    @Border
+  }
+}
+
+Decor = "StatusWindow" {
+  @EmptyDecor
+  Border {
+    @Border
+  }
+}
+
+Decor = "WorkspaceIndicator" {
+  @EmptyDecor
+  Border {
+    @Border
+  }
+}
+
+CmdDialog {
+  Font = "$FONT"
+  Texture = "$TEX_UN"
+  Text = "$TEXT_UN"
+  Pad = "4 4 4 4"
+}
+
+Harbour {
+  Texture = "$TEX_UN"
+}
+
+Menu {
+  Focused {
+    Font = "$MENU_FONT"
+    Background = "$TEX_FO 5x5"
+    Item = "Empty"
+    Text = "$TEXT_FO"
+    Separator = "Solid $COLOR_FO_HI 0x1"
+    Arrow = "Solid $COLOR_FO_LO 5x5"
+  }
+  Unfocused {
+    Font = "$MENU_FONT"
+    Background = "$TEX_UN 5x5"
+    Item = "Empty"
+    Text = "$TEXT_UN"
+    Separator = "Solid $COLOR_UN_HI 0x1"
+    Arrow = "Solid $COLOR_UN_LO 5x5"
+  }
+  Selected {
+    Font = "$MENU_FONT"
+    Background = "$TEX_FO_SEL 5x5"
+    Item = "$TEX_FO_SEL 1x1"
+    Text = "$TEXT_FO_SEL"
+    Arrow = "Solid $COLOR_FO_SEL_LO 5x5"
+  }
+  Pad = "2 2 4 4"
+}
+
+Status {
+  Font = "$FONT"
+  Texture = "Solid $COLOR_UN"
+  Text = "$TEXT_UN"
+  Pad = "0 0 0 0"
+}
+
+WorkspaceIndicator {
+  Font = "$FONT#Center"
+  Background = "Solid $COLOR_FO"
+  Workspace = "Solid $COLOR_FO_HI"
+  WorkspaceActive = "Solid $COLOR_FO_SEL_HI"
+  Text = "$TEXT_FO"
+  EdgePadding = "2"
+  WorkspacePadding = "2"
+}
