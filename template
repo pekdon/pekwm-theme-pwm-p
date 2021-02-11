@@ -172,6 +172,25 @@ CmdDialog {
   Pad = "4 4 4 4"
 }
 
+Dialog {
+  Background = "Solid $COLOR_UN"
+  TitleFont = "$MENU_FONT"
+  TitleColor = "$TEXT_FO_SEL"
+  Font = "$FONT"
+  Text = "$TEXT_FO"
+  Pad = "4 4 4 4"
+
+  Button {
+    Font = "$FONT"
+    Text = "$TEXT_FO_SEL"
+
+    Focused = "$TEX_FO"
+    Unfocused = "$TEX_UN"
+    Hoover = "$TEX_FO_SEL"
+    Pressed = "$TEX_UN_SEL"
+  }
+}
+
 Harbour {
   Texture = "$TEX_UN"
 }
