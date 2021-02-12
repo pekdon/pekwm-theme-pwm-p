@@ -80,14 +80,14 @@ Define = "Decor" {
   WidthMax = "95"
   WidthSymetric = "true"
   
-  Focused = "$TEX_FO 1x1"
-  Unfocused = "$TEX_UN 1x1"
+  Focused = "$TEX_FO"
+  Unfocused = "$TEX_UN"
   
   Tab {
-    Focused = "$TEX_FO 1x1"
-    FocusedSelected = "$TEX_FO_SEL 1x1"
-    Unfocused = "$TEX_UN 1x1"
-    UnfocusedSelected = "$TEX_UN_SEL 1x1"
+    Focused = "$TEX_FO"
+    FocusedSelected = "$TEX_FO_SEL"
+    Unfocused = "$TEX_UN"
+    UnfocusedSelected = "$TEX_UN_SEL"
   }
   Separator {
     Focused = "Empty"
@@ -198,24 +198,24 @@ Harbour {
 Menu {
   Focused {
     Font = "$MENU_FONT"
-    Background = "$TEX_FO 5x5"
+    Background = "$TEX_FO"
     Item = "Empty"
     Text = "$TEXT_FO"
-    Separator = "Solid $COLOR_FO_HI 0x1"
+    Separator = "Solid $COLOR_FO_HI 1x1"
     Arrow = "Solid $COLOR_FO_LO 5x5"
   }
   Unfocused {
     Font = "$MENU_FONT"
-    Background = "$TEX_UN 5x5"
+    Background = "$TEX_UN"
     Item = "Empty"
     Text = "$TEXT_UN"
-    Separator = "Solid $COLOR_UN_HI 0x1"
+    Separator = "Solid $COLOR_UN_HI 1x1"
     Arrow = "Solid $COLOR_UN_LO 5x5"
   }
   Selected {
     Font = "$MENU_FONT"
-    Background = "$TEX_FO_SEL 5x5"
-    Item = "$TEX_FO_SEL 1x1"
+    Background = "$TEX_FO_SEL"
+    Item = "$TEX_FO_SEL"
     Text = "$TEXT_FO_SEL"
     Arrow = "Solid $COLOR_FO_SEL_LO 5x5"
   }
