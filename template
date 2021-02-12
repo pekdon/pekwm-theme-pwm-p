@@ -231,9 +231,9 @@ Status {
 
 WorkspaceIndicator {
   Font = "$FONT#Center"
-  Background = "Solid $COLOR_FO"
-  Workspace = "Solid $COLOR_FO_HI"
-  WorkspaceActive = "Solid $COLOR_FO_SEL_HI"
+  Background = "Solid $COLOR_UN"
+  Workspace = "Solid $COLOR_UN_SEL"
+  WorkspaceActive = "Solid $COLOR_FO_SEL"
   Text = "$TEXT_FO"
   EdgePadding = "2"
   WorkspacePadding = "2"

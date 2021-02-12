@@ -3,7 +3,7 @@
 $FONT = "-*-helvetica-*-r-*-*-12-*-*-*-*-*-iso10646-*"
 $MENU_FONT = "-*-courier-*-r-*-*-12-*-*-*-*-*-iso10646-*"
 
-$BG_TEX = "Solid #666666"
+$BG_TEX = "SolidRaised #bbbbbb #bbbbbb #aaaaaa 0 0 48x48"
 
 $COLOR_FO = "#405060"
 $COLOR_FO_HI = "#607080"
