@@ -15,13 +15,13 @@ Background {
 
 ColorMaps {
   ColorMap = "Focused" {
-    Map = "#aaaaaa" { To = "$COLOR_FO" }
-    Map = "#ffffff" { To = "$COLOR_FO_HI" }
+    Map = "#ffffff" { To = "$COLOR_FO" }
+    Map = "#aaaaaa" { To = "$COLOR_FO_HI" }
     Map = "#000000" { To = "$COLOR_FO_LO" }
   }
   ColorMap = "Unfocused" {
-    Map = "#aaaaaa" { To = "$COLOR_UN" }
-    Map = "#ffffff" { To = "$COLOR_UN_HI" }
+    Map = "#ffffff" { To = "$COLOR_UN" }
+    Map = "#aaaaaa" { To = "$COLOR_UN_HI" }
     Map = "#000000" { To = "$COLOR_UN_LO" }    
   }
 }
