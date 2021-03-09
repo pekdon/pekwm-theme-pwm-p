@@ -222,6 +222,32 @@ Menu {
   Pad = "2 2 4 4"
 }
 
+Panel {
+  Background = "Solid $COLOR_FO"
+  BackgroundOpacity = "80"
+  Height = "24"
+  Separator = "Solid $COLOR_FO_SEL 2x24"
+
+  Bar {
+    Percent = "100" { Color = "#00ff00" }
+    Percent = "70" { Color = "#ffa500" }
+    Percent = "10" { Color = "#ff0000" }
+  }
+
+  Focused {
+    Font = "$FONT_B#Center"
+    Color = "$TEXT_FO_SEL"
+  }
+  Unfocused {
+    Font = "$FONT#Center"
+    Color = "$TEXT_FO"
+  }
+  Iconified {
+    Font = "$FONT_I#Center"
+    Color = "$TEXT_UN"
+  }
+}
+
 Status {
   Font = "$FONT"
   Texture = "Solid $COLOR_UN"

@@ -1,6 +1,8 @@
 # default pwm-p variant (brownsteel)
 
-$FONT = "-*-helvetica-*-r-*-*-12-*-*-*-*-*-iso10646-*"
+$FONT = "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-iso10646-*"
+$FONT_B = "-*-helvetica-bold-r-*-*-12-*-*-*-*-*-iso10646-*"
+$FONT_I = "-*-helvetica-medium-o-normal-*-12-*-*-*-*-*-iso10646-*"
 $MENU_FONT = "-*-courier-*-r-*-*-12-*-*-*-*-*-iso10646-*"
 
 $BG_TEX = "SolidRaised #bbbbbb #bbbbbb #aaaaaa 0 0 48x48"
