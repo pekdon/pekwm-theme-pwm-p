@@ -1,0 +1,30 @@
+# Xresources pwm-p variant
+
+$FONT = "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-iso10646-*"
+$FONT_B = "-*-helvetica-bold-r-*-*-12-*-*-*-*-*-iso10646-*"
+$FONT_I = "-*-helvetica-medium-o-normal-*-12-*-*-*-*-*-iso10646-*"
+$MENU_FONT = "-*-courier-*-r-*-*-12-*-*-*-*-*-iso10646-*"
+
+$BG_TEX = "SolidRaised pekwm*color.bg pekwm*color.bgHi pekwm*color.bgLo 0 0 48x48"
+
+$COLOR_FO = "RES#pekwm*color.fo"
+$COLOR_FO_HI = "RES#pekwm*color.foHi"
+$COLOR_FO_LO = "RES#pekwm*color.foLo"
+$TEXT_FO = "RES#pekwm*color.foText"
+
+$COLOR_FO_SEL = "RES#pekwm*color.foSel"
+$COLOR_FO_SEL_HI = "RES#pekwm*color.foSelHi"
+$COLOR_FO_SEL_LO = "RES#pekwm*color.foSelLo"
+$TEXT_FO_SEL = "RES#pekwm*color.foSelText"
+
+$COLOR_UN = "RES#pekwm*color.un"
+$COLOR_UN_HI = "RES#pekwm*color.unHi"
+$COLOR_UN_LO = "RES#pekwm*color.unLo"
+$TEXT_UN = "RES#pekwm*color.unText"
+
+$COLOR_UN_SEL = "RES#pekwm*color.unSel"
+$COLOR_UN_SEL_HI = "RES#pekwm*color.unSelHi"
+$COLOR_UN_SEL_LO = "RES#pekwm*color.unSelLo"
+$TEXT_UN_SEL = "RES#pekwm*color.unSelText"
+
+INCLUDE = "$THEME_DIR/template"
